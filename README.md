@@ -10,6 +10,9 @@ PROPERTIES: (id, propertyId, title, short_description)
 API Endpoints:
 Program Management
 
+
+**Example:**
+```markdown
 `POST /programs/create: Creates a new property.`
 `PUT /programs/{programId}/update: Updates a property details.`
 `DELETE /programs/{programId}/delete: Deletes a program.`
