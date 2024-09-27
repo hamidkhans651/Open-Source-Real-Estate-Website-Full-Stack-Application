@@ -148,20 +148,20 @@ Failed Response: (Invalid Input )
 }
 
 ## API :  Delete Program
-Endpoint: api.panaversity.com/program/delete/{id}
+Endpoint: api.property.com/program/delete/{id}
 Method: DELETE
-Description:Deletes an existing program identified by its id.
+Description:Deletes an existing propery identified by its id.
 Request:
 No request body needed; Id is passed as a URL parameter
 Successful Response:
 {
     "status": "success",
-    "message": "Program deleted successfully."
+    "message": "property deleted successfully."
 }
 Failed Response:
 {
     "status": "error",
-    "message": "Program not found for the provided ID."
+    "message": "Property not found for the provided ID."
 }
 
 
