@@ -9,10 +9,11 @@ PROPERTIES: (id, propertyId, title, short_description)
 
 API Endpoints:
 Program Management
-POST /programs/create: Creates a new property.
-PUT /programs/{programId}/update: Updates a property details.
-DELETE /programs/{programId}/delete: Deletes a program.
-GET /programs/list: Retrieves a list of all properties.
+
+`POST /programs/create: Creates a new property.`
+`PUT /programs/{programId}/update: Updates a property details.`
+`DELETE /programs/{programId}/delete: Deletes a program.`
+`GET /programs/list: Retrieves a list of all properties.`
 API : Get All PROPERTIES
 Endpoint: api.property.com/program/all
 Method: GET
