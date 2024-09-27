@@ -1,7 +1,9 @@
 # College-assignments
 
-REAL ESTATE WEBSITE 
-Teaching Program Microservice
+# REAL ESTATE WEBSITE 
+# Teaching Program Microservice
+
+
 
 Schema:
 Program: (id, title, description, prerequisite) 
@@ -11,12 +13,11 @@ API Endpoints:
 Program Management
 
 
-**Example:**
-```markdown
-`POST /programs/create: Creates a new property.`
-`PUT /programs/{programId}/update: Updates a property details.`
-`DELETE /programs/{programId}/delete: Deletes a program.`
-`GET /programs/list: Retrieves a list of all properties.`
+POST /programs/create: Creates a new property.
+PUT /programs/{programId}/update: Updates a property details.
+DELETE /programs/{programId}/delete: Deletes a program.
+GET /programs/list: Retrieves a list of all properties.
+
 API : Get All PROPERTIES
 Endpoint: api.property.com/program/all
 Method: GET
@@ -51,45 +52,45 @@ Failed Response:
 }
 
 
-API : Get Specific Program
-Endpoint: api.panaversity.com/program/{id}
+API : Get Specific State property
+Endpoint: api.property.com/program/{id}
 Method: GET
-Description: Retrieves details about a specific program.
+Description: Retrieves details about a specific state proeperty.
 Request:
 { 
-    "ProgramId": "P001"
+    "propertyID": "P001"
 }
 Successful Response:
 {
     "status": "success",
-    "ProgramId": "P001",
-    "Title": "Cloud Native Modern Python Program",
-    "Description": "A comprehensive program covering all aspects of Cloud Native Modern Python Programming.",
-    "ShortDescription": "A comprehensive program covering all aspects of Cloud Native Modern Python Programming.",
+    "PropertyId": "P001",
+    "Title": "Property details for ohio state property",
+    "Description": "A comprehensive details covering all properties of ohio state.",
+    "ShortDescription": "A comprehensive details covering all properties of ohio state in united states .",
     "Prerequisites": "None",
     "Courses": [
         {
             "CourseId": "C001",
-            "Title": "Modern Python Program",
-            "Description": "This course provides an in-depth understanding of modern Python programming techniques.",
-            "ShortDescription": "Modern Python Program"
+            "Title": "comarcial properties",
+            "Description": "This the list of all comercial propertie in the ohio",
+            "ShortDescription": "comarcial properties/shops/industrial areas"
         },
         {
             "CourseId": "C002",
-            "Title": "Cloud Native",
+            "Title": "residencial properties",
             "Description": "This course covers cloud-native concepts and practices.",
-            "ShortDescription": "Cloud Native"
+            "ShortDescription": "residencial properties/lands/plots"
         }
     ]
 }
 Failed Response:
 {
     "status": "error",
-    "message": "Program not found for the provided ProgramId."
+    "message": "Property not found for the provided propertyID."
 }
 
-API : Create New Program
-Endpoint: api.panaversity.com/program/create
+API : Create New Property
+Endpoint: api.Property.com/program/create
 Method: POST
 Description: Creates a new program with the specified details.
 Request:
